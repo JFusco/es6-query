@@ -1,0 +1,60 @@
+{
+	"name": "es6-query",
+	"version": "0.0.0",
+	"description": "A set of utility/helper functions, written in pure ES6",
+	"main": "dist/es6-query.js",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JFusco/es6-query"
+	},
+	"author": {
+		"name": "Joe Fusco",
+		"email": "jfusco311@gmail.com"
+	},
+	"keywords": [
+		"DOM",
+		"manipulation",
+		"addClass",
+		"removeClass",
+		"toggleClass",
+		"hasClass",
+		"es2015",
+		"es6"
+	],
+	"devDependencies": {
+		"babel-core": "~6.7.4",
+		"babel-eslint": "~6.0.2",
+		"babel-loader": "~6.2.4",
+		"babel-plugin-transform-runtime": "^6.4.3",
+		"babel-preset-es2015": "^6.3.13",
+		"babel-preset-stage-0": "^6.3.13",
+		"babel-runtime": "^6.6.0",
+		"gulp": "~3.9.0",
+		"gulp-esdoc": "~0.2.0",
+		"gulp-eslint": "~2.0.0",
+		"gulp-filelog": "~0.4.1",
+		"gulp-load-plugins": "~1.2.0",
+		"gulp-util": "~3.0.7",
+		"gulp-watch": "~4.3.5 ",
+		"jasmine-core": "^2.3.4",
+		"jasmine-jquery": "^2.1.1",
+		"jquery": "^2.2.2",
+		"karma": "^0.13.3",
+		"karma-jasmine": "^0.3.6",
+		"karma-phantomjs-launcher": "^1.0.0",
+		"karma-spec-reporter": "~0.0.24",
+		"karma-webpack": "^1.7.0",
+		"minimist": "~1.2.0",
+		"phantomjs": "^2.1.3",
+		"phantomjs-polyfill": "~0.0.2",
+		"phantomjs-prebuilt": ">=1.9",
+		"run-sequence": "^1.1.1",
+		"webpack": "^1.10.5"
+	},
+	"scripts": {
+		"test": "karma start --single-run --no-auto-watch",
+		"compile": "babel --presets es2015 -d dist/ src/",
+		"prepublish": "npm run compile"
+	}
+}
