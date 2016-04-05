@@ -1,6 +1,6 @@
 {
 	"name": "es6-query",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A set of utility/helper functions, written in pure ES6",
 	"main": "dist/es6-query.js",
 	"license": "MIT",
