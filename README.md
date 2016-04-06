@@ -8,8 +8,32 @@
 
 #### Install
 ```
-npm install es6-query
+npm install es6-query --save-dev
 ```
+
+#### Usage
+```
+import query from 'es6-query';
+
+//-- Simple example
+const dom = query('#some-id');
+
+if(dom.hasClass('some-class')){
+	dom.removeClass('some-class');
+}
+
+//-- It's chainable!
+dom.addClass('chain').removeClass('some-class');
+```
+
+## API ##
+* **`addClass(name:String)`**
+* **`removeClass(name:String)`**
+* **`hasClass(name:String)`**
+* **`toggleClass(name:String)`**
+* **`remove()`**
+* **`get(index:int)`**
+* **`data(name:int)`**
 
 ## Tests ##
 ```

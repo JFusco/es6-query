@@ -171,7 +171,7 @@
 		(0, _classCallCheck3.default)(this, DOM);
 
 		if (typeof node === 'undefined' || node === '') {
-			throw 'You must define a class, id or a tag';
+			throw new Error('You must define a class, id or a tag');
 		}
 
 		if (typeof node.nodeType !== 'undefined') {

@@ -3,7 +3,7 @@
 export default class DOM {
 	constructor(node) {
 		if(typeof node === 'undefined' || node === ''){
-			throw('You must define a class, id or a tag');
+			throw new Error('You must define a class, id or a tag');
 		}
 
 		if(typeof node.nodeType !== 'undefined'){
