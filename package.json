@@ -1,6 +1,6 @@
 {
 	"name": "es6-query",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Simple, lightweight, DOM manipulation object using plain ES6 syntax",
 	"main": "dist/es6-query.js",
 	"license": "MIT",
@@ -53,8 +53,6 @@
 		"webpack": "^1.10.5"
 	},
 	"scripts": {
-		"test": "karma start --single-run --no-auto-watch",
-		"compile": "babel --presets es2015 -d dist/ src/",
-		"prepublish": "npm run compile"
+		"test": "karma start --single-run --no-auto-watch"
 	}
 }

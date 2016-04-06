@@ -28,7 +28,7 @@ describe('Selecting a DOM element', () => {
 		}));
 	});
 
-	it('should have a length of 0 if no node is found', () =>{
+	it('should have a length of 0 if no node is found', () => {
 		const spec = query('dfgdfg');
 
 		expect(spec[0]).toBeUndefined();

@@ -67,6 +67,7 @@
 		"jasmine": true,
 		"describe": true,
 		"beforeEach": true,
-		"loadFixtures": true
+		"loadFixtures": true,
+		"Node": true
 	}
 }
