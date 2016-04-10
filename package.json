@@ -1,6 +1,6 @@
 {
 	"name": "es6-query",
-	"version": "0.0.4",
+	"version": "1.0.0",
 	"description": "Simple, lightweight, DOM manipulation object using plain ES6 syntax",
 	"main": "dist/es6-query.js",
 	"license": "MIT",
@@ -19,6 +19,9 @@
 		"removeClass",
 		"toggleClass",
 		"hasClass",
+		"remove",
+		"get",
+		"data",
 		"es2015",
 		"es6"
 	],
