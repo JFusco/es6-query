@@ -4,12 +4,12 @@ module.exports = function (config) {
 	config.set({
 		frameworks: ['jasmine'],
 		files: [
+			'spec/*-spec.js',
 			{
 				pattern: 'spec/fixtures/**/*.html',
 				served: true,
 				included: false
-			},
-			'spec/*-spec.js'
+			}
 		],
 		plugins: [webpack, 'karma-jasmine', 'karma-phantomjs-launcher', 'karma-spec-reporter'],
 		browsers: ['PhantomJS'],
@@ -30,11 +30,3 @@ module.exports = function (config) {
 		webpackMiddleware: { noInfo: true }
 	});
 };
-/*
- ,files: [
-,'bower_components/jquery/dist/jquery.js'
-		,'bower_components/jasmine-jquery/lib/jasmine-jquery.js'
-		,'src/*.js'
-		,'spec/*.js'
-],
- */

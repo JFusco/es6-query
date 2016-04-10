@@ -2,6 +2,9 @@
 
 import query from '../src/es6-query';
 import $ from 'jquery';
+import 'jasmine-jquery';
+
+jasmine.getFixtures().fixturesPath = 'base/spec/fixtures';
 
 describe('Selecting a DOM element', () => {
 	beforeEach(() => {

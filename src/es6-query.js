@@ -61,7 +61,16 @@ query.dom = DOM.prototype = {
 	},
 
 	toggleClass(name){
-		return this[0].classList.toggle(name);
+		if(this.length > 1){
+			let i;
+			for(i = 0; i < this.length; i++){
+				this[i].classList.toggle(name);
+			}
+		}else{
+			this[0].classList.toggle(name);
+		}
+
+		return this;
 	},
 
 	remove() {
@@ -79,7 +88,7 @@ query.dom = DOM.prototype = {
 
 	get(index) {
 		if(this.length === 1){
-			throw('This method requires a nodeList. Please provide a class or tag.');
+			throw new Error('This method requires a nodeList. Please provide a class or tag.');
 		}
 
 		this[0] = this[index];
@@ -87,7 +96,7 @@ query.dom = DOM.prototype = {
 		this.length = 1;
 
 		if(typeof this[0] === 'undefined'){
-			throw('Element does not exist, please check your index that you provided and children available.');
+			throw new Error('Element does not exist, please check your index that you provided and children available.');
 		}
 
 		return this;

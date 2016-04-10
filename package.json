@@ -1,6 +1,6 @@
 {
 	"name": "es6-query",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple, lightweight, DOM manipulation object using plain ES6 syntax",
 	"main": "dist/es6-query.js",
 	"license": "MIT",
